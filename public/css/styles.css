@@ -1,0 +1,44 @@
+.mnav{
+    background-image: url("/images/crowd.jpeg");
+    height: 200px;
+}
+.nhome{
+  background-color: #cecab1;
+}
+
+.sublogo{
+    height: 3%;
+    width: 3%;
+}
+
+.tis{
+    padding-top: 50px;
+    text-align: center;
+    color: white;  
+}
+
+.back{
+    background-color: #cecab1;
+}
+
+.logo{
+    background-color: #cecab1;
+    height: 9%;
+    width: 9%;
+    margin: 4%;
+    border-radius: 5px;
+}
+
+.form-control{
+    width: 20%;
+}
+
+.btn{
+    margin-top: 10px;
+    color: white;
+    width: 8%;
+    background-color: #9fc7aa;
+}
+.home{
+    background-color: #f9f7f0;
+}

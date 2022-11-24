@@ -5,10 +5,27 @@
 </div>
 <div class="login">
     <form class="login" action="/" method="post">
-      <input class="form-control" aria-label="Large" type="text" placeholder="enter your id number" id="NAME" name="id" autofocus>
+      <input class="form-control" aria-label="Large" type="text" placeholder="enter your id number" name="id" id="enroll" autofocus>
       <br>
-      <button class="btn btn-lg">login</button>
+      <button class="btn btn-lg" onclick="sendAjax()" >login</button>
     </form>
 </div>
-
 </center>
+  
+<script>
+     function sendAjax(){
+      console.log("hello");
+      var enroll = document.getElementById("enroll").value;
+      console.log(enroll);
+      $.ajax({
+        method:"POST",
+        url:"/home",
+        data:{enroll:enroll},
+        success:function(data){ 
+          console.log(data); 
+        }
+      });  
+    };
+</script>
+</body>
+
